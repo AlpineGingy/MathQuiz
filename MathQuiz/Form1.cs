@@ -19,7 +19,7 @@ namespace MathQuiz
 
         private void btnFinish_Click(object sender, EventArgs e)
         {
-            lblName.Text = "Andruw Sorensen";
+            lblTimeLeft.Text = "Andruw Sorensen";
         }
     }
 }
