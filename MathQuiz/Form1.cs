@@ -116,8 +116,7 @@ namespace MathQuiz
                 // got the answer right. Stop the timer  
                 // and show a MessageBox.
                 timer1.Stop();
-                MessageBox.Show("You got all the answers right!," +
-                                "Congratulations!");
+                MessageBox.Show("You got all the answers right!", "Congratulations!");
                 btnStart.Enabled = true;
             }
             else if (timeLeft > 0)
