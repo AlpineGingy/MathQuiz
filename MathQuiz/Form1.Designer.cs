@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.lblTimeLeft = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.lblTime = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             this.lblDivideEqual = new System.Windows.Forms.Label();
             this.lblDivideLeft = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lblDate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).BeginInit();
@@ -85,17 +87,19 @@
             // lblTime
             // 
             this.lblTime.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTime.Location = new System.Drawing.Point(472, 25);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(200, 30);
             this.lblTime.TabIndex = 2;
+            this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblPlusLeft
             // 
             this.lblPlusLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlusLeft.Location = new System.Drawing.Point(85, 95);
             this.lblPlusLeft.Name = "lblPlusLeft";
-            this.lblPlusLeft.Size = new System.Drawing.Size(60, 50);
+            this.lblPlusLeft.Size = new System.Drawing.Size(87, 50);
             this.lblPlusLeft.TabIndex = 3;
             this.lblPlusLeft.Text = "?";
             this.lblPlusLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,7 +117,7 @@
             // lblPlus
             // 
             this.lblPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlus.Location = new System.Drawing.Point(193, 95);
+            this.lblPlus.Location = new System.Drawing.Point(208, 100);
             this.lblPlus.Name = "lblPlus";
             this.lblPlus.Size = new System.Drawing.Size(60, 50);
             this.lblPlus.TabIndex = 6;
@@ -125,7 +129,7 @@
             this.lblPlusRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlusRight.Location = new System.Drawing.Point(305, 95);
             this.lblPlusRight.Name = "lblPlusRight";
-            this.lblPlusRight.Size = new System.Drawing.Size(60, 50);
+            this.lblPlusRight.Size = new System.Drawing.Size(88, 50);
             this.lblPlusRight.TabIndex = 7;
             this.lblPlusRight.Text = "?";
             this.lblPlusRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -153,7 +157,7 @@
             this.lblMinusRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinusRight.Location = new System.Drawing.Point(305, 161);
             this.lblMinusRight.Name = "lblMinusRight";
-            this.lblMinusRight.Size = new System.Drawing.Size(60, 50);
+            this.lblMinusRight.Size = new System.Drawing.Size(88, 50);
             this.lblMinusRight.TabIndex = 12;
             this.lblMinusRight.Text = "?";
             this.lblMinusRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,7 +165,7 @@
             // lblMinus
             // 
             this.lblMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinus.Location = new System.Drawing.Point(193, 161);
+            this.lblMinus.Location = new System.Drawing.Point(208, 166);
             this.lblMinus.Name = "lblMinus";
             this.lblMinus.Size = new System.Drawing.Size(60, 50);
             this.lblMinus.TabIndex = 11;
@@ -183,7 +187,7 @@
             this.lblMinusLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinusLeft.Location = new System.Drawing.Point(85, 161);
             this.lblMinusLeft.Name = "lblMinusLeft";
-            this.lblMinusLeft.Size = new System.Drawing.Size(60, 50);
+            this.lblMinusLeft.Size = new System.Drawing.Size(87, 50);
             this.lblMinusLeft.TabIndex = 9;
             this.lblMinusLeft.Text = "?";
             this.lblMinusLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -202,7 +206,7 @@
             this.lblTimesRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimesRight.Location = new System.Drawing.Point(305, 236);
             this.lblTimesRight.Name = "lblTimesRight";
-            this.lblTimesRight.Size = new System.Drawing.Size(60, 50);
+            this.lblTimesRight.Size = new System.Drawing.Size(88, 50);
             this.lblTimesRight.TabIndex = 17;
             this.lblTimesRight.Text = "?";
             this.lblTimesRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -210,7 +214,7 @@
             // lblTimes
             // 
             this.lblTimes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimes.Location = new System.Drawing.Point(193, 236);
+            this.lblTimes.Location = new System.Drawing.Point(208, 241);
             this.lblTimes.Name = "lblTimes";
             this.lblTimes.Size = new System.Drawing.Size(60, 50);
             this.lblTimes.TabIndex = 16;
@@ -232,7 +236,7 @@
             this.lblTimesLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTimesLeft.Location = new System.Drawing.Point(85, 236);
             this.lblTimesLeft.Name = "lblTimesLeft";
-            this.lblTimesLeft.Size = new System.Drawing.Size(60, 50);
+            this.lblTimesLeft.Size = new System.Drawing.Size(87, 50);
             this.lblTimesLeft.TabIndex = 14;
             this.lblTimesLeft.Text = "?";
             this.lblTimesLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,7 +255,7 @@
             this.lblDivideRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDivideRight.Location = new System.Drawing.Point(305, 312);
             this.lblDivideRight.Name = "lblDivideRight";
-            this.lblDivideRight.Size = new System.Drawing.Size(60, 50);
+            this.lblDivideRight.Size = new System.Drawing.Size(88, 50);
             this.lblDivideRight.TabIndex = 22;
             this.lblDivideRight.Text = "?";
             this.lblDivideRight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -259,7 +263,7 @@
             // lblDivide
             // 
             this.lblDivide.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDivide.Location = new System.Drawing.Point(193, 312);
+            this.lblDivide.Location = new System.Drawing.Point(208, 317);
             this.lblDivide.Name = "lblDivide";
             this.lblDivide.Size = new System.Drawing.Size(60, 50);
             this.lblDivide.TabIndex = 21;
@@ -281,7 +285,7 @@
             this.lblDivideLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDivideLeft.Location = new System.Drawing.Point(85, 312);
             this.lblDivideLeft.Name = "lblDivideLeft";
-            this.lblDivideLeft.Size = new System.Drawing.Size(60, 50);
+            this.lblDivideLeft.Size = new System.Drawing.Size(87, 50);
             this.lblDivideLeft.TabIndex = 19;
             this.lblDivideLeft.Text = "?";
             this.lblDivideLeft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -291,11 +295,22 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Location = new System.Drawing.Point(45, 25);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(46, 24);
+            this.lblDate.TabIndex = 23;
+            this.lblDate.Text = "date";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(717, 474);
+            this.Controls.Add(this.lblDate);
             this.Controls.Add(this.quotient);
             this.Controls.Add(this.lblDivideRight);
             this.Controls.Add(this.lblDivide);
@@ -320,9 +335,11 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lblTimeLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Math Quiz";
+            this.Text = "Andruw Sorensen Math Quiz";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.sum)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.difference)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.product)).EndInit();
@@ -358,6 +375,7 @@
         private System.Windows.Forms.Label lblDivideEqual;
         private System.Windows.Forms.Label lblDivideLeft;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lblDate;
     }
 }
 

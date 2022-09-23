@@ -157,5 +157,11 @@ namespace MathQuiz
 
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DateTime currentDate = DateTime.Today;
+            lblDate.Text = currentDate.ToString("dd MMMM yyyy");
+        }
     }
 }
